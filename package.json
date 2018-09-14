@@ -1,0 +1,17 @@
+{
+  "name": "hyperapp-parcel-sass",
+  "version": "1.0.0",
+  "description": "This is hyperapp using parcel and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phungnc",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "hyperapp": "^1.2.9",
+    "parcel-bundler": "^1.9.7"
+  }
+}
