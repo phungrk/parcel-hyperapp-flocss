@@ -1,0 +1,16 @@
+@charset "utf-8";
+$screen-xs-min:480px;
+$screen-sm-min:768px;
+$screen-md-min:992px;
+$screen-lg-min:1200px;
+// --------------------------------------------------
+// import
+// --------------------------------------------------
+// Foundation
+@import "foundation";
+// Layout
+@import "layout";
+// Object
+@import "object";
+// Pages
+//@import "pages-layout";
