@@ -9,13 +9,14 @@
 // ○○○
 // --------------------------------------------------
 .p-rating-list {
-  
+  lost-center: 980px;
 }
 .p-rating-list-item {
-  //border: 1px solid #dbdede;
-  //display: table;
   padding: 13px 0;
   width: 100%;
+  @media (min-width:$screen-md-min ) {
+    lost-column: 1/3;    
+  }
 }
 .p-rating-list-input {
   

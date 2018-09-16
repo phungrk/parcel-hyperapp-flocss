@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    require('lost'),
     require('autoprefixer')({
       grid: true, 
       browsers: ['last 2 versions', 'ie 11']
