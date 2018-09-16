@@ -1,24 +1,27 @@
 import { h, app } from "hyperapp";
 const WhatGreat = () => {
   return (
-    <ul>
-      <li>
+    <ul class="p-rating-list c-form-radio">
+      <li class="p-rating-list-item">
         <label onclick={() => actions.setRateGood(1)} >
           <input type="checkbox" value="1" name="ratingGood" />
-          <span>Time</span>
+          <span class="c-form-radio-label">Time</span>
         </label>        
       </li>
-      <li>
+      <li class="p-rating-list-item">
         <label onclick={() => actions.setRateGood(2)} >
           <input type="checkbox" value="1" name="ratingGood" />
-          <span>Quality</span>
+          <span class="c-form-radio-label">Quality</span>
         </label>    
       </li>
-      <li>
+      <li class="p-rating-list-item">
         <label onclick={() => actions.setRateGood(3)} >
           <input type="checkbox" value="1" name="ratingGood" />
-          <span>Performance and Service</span>
+          <span class="c-form-radio-label">Performance and Service</span>
         </label>   
+      </li>
+      <li class="p-rating-list-input">Others
+        <textarea type="text" name="other" class="c-form-textarea" ></textarea>
       </li>
     </ul>
   )
@@ -67,7 +70,7 @@ const actions = {
 }
 //
 const view = (state, actions) => (
-  <main>
+  <main class="l-rating">
     <h2>Rate: {state.rate}</h2>
     <div>
       <label onclick={() => actions.setRate(1)} >
